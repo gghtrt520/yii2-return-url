@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist yiier/yiier-return-url "*"
+php composer.phar require --prefer-dist yiier/yii2-return-url "*"
 ```
 
 or add
 
 ```
-"yiier/yiier-return-url": "*"
+"yiier/yii2-return-url": "*"
 ```
 
 to the require section of your `composer.json` file.

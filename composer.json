@@ -1,5 +1,5 @@
 {
-    "name": "yiier/yiier-return-url",
+    "name": "yiier/yii2-return-url",
     "description": "Keeps current URL in session for login actions so we can return to it if needed.",
     "type": "yii2-extension",
     "keywords": ["yii2","filter","ReturnUrl",""],
