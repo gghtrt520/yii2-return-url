@@ -1,5 +1,10 @@
 Yii2 Login ReturnUrl filter
 ===========================
+[![Latest Stable Version](https://poser.pugx.org/yiier/yii2-return-url/v/stable)](https://packagist.org/packages/yiier/yii2-return-url) 
+[![Total Downloads](https://poser.pugx.org/yiier/yii2-return-url/downloads)](https://packagist.org/packages/yiier/yii2-return-url) 
+[![Latest Unstable Version](https://poser.pugx.org/yiier/yii2-return-url/v/unstable)](https://packagist.org/packages/yiier/yii2-return-url) 
+[![License](https://poser.pugx.org/yiier/yii2-return-url/license)](https://packagist.org/packages/yiier/yii2-return-url)
+
 Keeps current URL in session for login actions so we can return to it if needed.
 
 中文说明：登录之后自动跳转登录之前的页面
