@@ -13,7 +13,10 @@ use yii\base\Event;
 
 class EventBootstrap implements BootstrapInterface
 {
-    public $uniqueIds;
+    /**
+     * @var array
+     */
+    public $uniqueIds = ['site/login'];
 
     public function bootstrap($app)
     {
