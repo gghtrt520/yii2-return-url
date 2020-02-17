@@ -5,7 +5,8 @@
  * createTime : 2016/3/16 10:14
  * description:
  */
-namespace yiier\ReturnUrl;
+
+namespace yiier\returnUrl;
 
 use Yii;
 use yii\base\ActionFilter;
@@ -20,6 +21,7 @@ class ReturnUrl extends ActionFilter
     /**
      * @param \yii\base\Action $action
      * @return bool
+     * @throws \yii\base\InvalidConfigException
      */
     public function beforeAction($action)
     {

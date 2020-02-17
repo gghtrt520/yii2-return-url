@@ -32,6 +32,21 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
+## Method One (方式一，推荐)
+
+you need to include it in config in bootstrap section:
+
+```php
+return [
+    'bootstrap' => [
+        'yiier\returnUrl\EventBootstrap',
+    ],
+];
+```
+
+
+## Method Two (方式二)
+ 
 In your controller add ReturnUrl filter to behaviors:
 
 ```php
