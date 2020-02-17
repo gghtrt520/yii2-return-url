@@ -9,21 +9,28 @@
 namespace yiier\returnUrl;
 
 use Yii;
-use yii\base\ActionFilter;
+use yii\base\Behavior;
+use yii\web\Controller;
 
-class ReturnUrl extends ActionFilter
+class ReturnUrl extends Behavior
 {
     /**
      * @var array
      */
     public $uniqueIds = ['site/login'];
 
+    public function events()
+    {
+        return [
+            Controller::EVENT_BEFORE_ACTION => 'beforeAction',
+        ];
+    }
+
     /**
-     * @param \yii\base\Action $action
      * @return bool
      * @throws \yii\base\InvalidConfigException
      */
-    public function beforeAction($action)
+    public function beforeAction()
     {
         if (Yii::$app->user->isGuest) {
             if (!(Yii::$app->request->getIsAjax() || $this->isValidate())) {

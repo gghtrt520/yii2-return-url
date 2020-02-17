@@ -34,13 +34,18 @@ Usage
 
 ## Method One (方式一，推荐)
 
-you need to include it in config in bootstrap section:
+you need to include it in config:
 
 ```php
 return [
-    'bootstrap' => [
-        'yiier\returnUrl\EventBootstrap',
-    ],
+    'on beforeAction' => function ($event) {
+        Yii::createObject([
+            'class' => \yiier\returnUrl\ReturnUrl::class,
+            'uniqueIds' => ['site/qrcode', 'site/login', 'site/signup']
+        ])->beforeAction();
+    },
+    'components' => [
+    ]
 ];
 ```
 
